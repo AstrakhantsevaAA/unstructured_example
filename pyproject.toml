@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "unstructured-example"
+version = "0.1.0"
+description = ""
+authors = ["Alena Astrakhantseva <astra92293@gmail.com>"]
+readme = "README.md"
+packages = [{include = "unstructured_example"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dlt = {extras = ["duckdb"], version = "^0.3.4"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
